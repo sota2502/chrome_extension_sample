@@ -1,0 +1,18 @@
+{
+  "name": "Sample",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Sample Chrome Extension",
+  "content_scripts": [{
+    "matches": ["https://nbjogger.net/*"],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "permissions": ["activeTab", "scripting", "storage"],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "extension.png"
+  }
+}
